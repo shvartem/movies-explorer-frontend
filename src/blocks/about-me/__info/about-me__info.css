@@ -1,0 +1,9 @@
+.about-me__info {
+  display: grid;
+  grid-template-areas: 
+  "aboutMeHeader aboutMePhoto"
+  "aboutMeDecsription aboutMePhoto"
+  "aboutMeBio aboutMePhoto"
+  "aboutMeLinks aboutMePhoto";
+  justify-content: space-between;
+}

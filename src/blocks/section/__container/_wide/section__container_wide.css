@@ -1,0 +1,18 @@
+.section__container_wide {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+@media screen and (max-width: 1023px) { 
+  .section__container_wide {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) { 
+  .section__container_wide {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
