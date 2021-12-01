@@ -1,10 +1,17 @@
+import './Movies.css';
+import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import SearchForm from '../SearchForm/SearchForm';
 
-function Movies() {
+function Movies(props) {
+  const { cards } = props;
   return (
     <section className="section movies">
       <div className="section__container movies__container">
         <SearchForm />
+        <MoviesCardList cards={cards} />
+        <div className="movies__more">
+          <button type="button" className="movies__more-button">Ещё</button>
+        </div>
       </div>
     </section>
   );

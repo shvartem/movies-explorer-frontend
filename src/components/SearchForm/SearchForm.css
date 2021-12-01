@@ -57,17 +57,29 @@
   box-sizing: border-box;
   padding: 2px;
   margin-right: 15px;
-  display: block;
+  display: flex;
   width: 34px;
   height: 14px;
   border-radius: 20px;
-  background-color: #dc3d3d;
+  background-color: #EE3465;
+  position: relative;
+  transition: background-color 0.3s linear;
 }
 
 .movies-form__checkbox-toggler {
   display: block;
+  position: absolute;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #fff;
+  transition: transform 0.3s linear;
+}
+
+.movies-form__item_checkbox:checked + .movies-form__visible-checkbox {
+  background-color: #3DDC84;
+}
+
+.movies-form__item_checkbox:checked + .movies-form__visible-checkbox > .movies-form__checkbox-toggler {
+  transform: translateX(20px);
 }

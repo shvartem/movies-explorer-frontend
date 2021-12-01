@@ -1,0 +1,46 @@
+.card {
+  box-sizing: border-box;
+  padding: 6px;
+  margin-bottom: 40px;
+  background-color: #2F2F2F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card:last-of-type {
+  margin-bottom: 0;
+}
+
+.card__info {
+  padding: 16px;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.card__duration {
+  margin-bottom: 30px;
+  font-size: 11px;
+  line-height: 1.18;
+  color: #8B8B8B;
+}
+
+.card__like {
+  width: 14px;
+  height: 12px;
+  background: url('../../images/like.svg') center / contain no-repeat;
+}
+
+.card__image {
+  width: 220px;
+  height: 122px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}

@@ -26,7 +26,7 @@ function SearchForm() {
         <span className="movies-form__visible-checkbox">
           <span className="movies-form__checkbox-toggler" />
         </span>
-        Короткометражки
+        <span className="movies-form__label-text">Короткометражки</span>
       </label>
     </form>
   );
