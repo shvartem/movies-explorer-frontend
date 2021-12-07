@@ -24,3 +24,9 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 767px) {
+  .movies__more-button {
+    width: 80%;
+  }
+}

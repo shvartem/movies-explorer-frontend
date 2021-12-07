@@ -6,7 +6,7 @@ function Movies(props) {
   const { cards } = props;
   return (
     <section className="section movies">
-      <div className="section__container movies__container">
+      <div className="section__container section__container_wide movies__container">
         <SearchForm />
         <MoviesCardList cards={cards} />
         <div className="movies__more">

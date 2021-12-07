@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 767px) { 
   .section__container_wide {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

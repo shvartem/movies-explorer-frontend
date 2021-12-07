@@ -4,6 +4,7 @@
 }
 
 .movies-form__wrapper {
+  padding-bottom: 11px;
   margin-bottom: 33px;
   border-bottom: 1px solid #424242;
   display: flex;
@@ -12,12 +13,12 @@
 }
 
 .movies-form__item {
-  padding-bottom: 13px;
   border: none;
   background-color: transparent;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
+  width: 100%;
 }
 
 .movies-form__item::placeholder {
@@ -82,4 +83,53 @@
 
 .movies-form__item_checkbox:checked + .movies-form__visible-checkbox > .movies-form__checkbox-toggler {
   transform: translateX(20px);
+}
+
+@media screen and (max-width: 1023px) {
+  .movies-form {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .movies-form__wrapper {
+    margin-bottom: 30px;
+  }
+
+  .movies-form__label {
+    flex-direction: row-reverse;
+    justify-content: end;
+  }
+
+  .movies-form__visible-checkbox {
+    margin-right: 0;
+  }
+
+  .movies-form__label-text {
+    margin-right: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .movies-form {
+    padding-top: 83px;
+    padding-bottom: 52px;
+  }
+
+  .movies-form__wrapper {
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+  }
+
+  .movies-form__item::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .movies-form__label {
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    line-height: 1.64;
+  }
 }
