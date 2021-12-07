@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
+import Profile from '../Profile/Profile';
 
 const cards = [
   {
@@ -281,14 +282,21 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Main />
+          <Footer />
         </Route>
 
         <Route exact path="/movies">
           <Movies cards={cards} />
+          <Footer />
         </Route>
 
         <Route exact path="/saved-movies">
           <SavedMovies savedCards={cards} />
+          <Footer />
+        </Route>
+
+        <Route exact path="/profile">
+          <Profile />
         </Route>
 
         <Route path="/404">
@@ -296,7 +304,6 @@ function App() {
         </Route>
       </Switch>
 
-      <Footer />
     </div>
   );
 }
