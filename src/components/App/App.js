@@ -5,6 +5,7 @@ import Main from '../Main/Main';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Movies from '../Movies/Movies';
+import SavedMovies from '../SavedMovies/SavedMovies';
 
 const cards = [
   {
@@ -284,6 +285,10 @@ function App() {
 
         <Route exact path="/movies">
           <Movies cards={cards} />
+        </Route>
+
+        <Route exact path="/saved-movies">
+          <SavedMovies savedCards={cards} />
         </Route>
 
         <Route path="/404">
