@@ -5,5 +5,7 @@
   margin: 0;
   background-color: #202020;
   color: #fff;
+  min-width: 320px;
   min-height: 100vh;
+  height: 1px;
 }

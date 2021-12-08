@@ -7,6 +7,8 @@ import Footer from '../Footer/Footer';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
+import Login from '../Login/Login';
+import Register from '../Register/Register';
 
 const cards = [
   {
@@ -278,25 +280,36 @@ const cards = [
 function App() {
   return (
     <div className="App page">
-      <Header />
       <Switch>
         <Route exact path="/">
+          <Header />
           <Main />
           <Footer />
         </Route>
 
         <Route exact path="/movies">
+          <Header />
           <Movies cards={cards} />
           <Footer />
         </Route>
 
         <Route exact path="/saved-movies">
+          <Header />
           <SavedMovies savedCards={cards} />
           <Footer />
         </Route>
 
         <Route exact path="/profile">
+          <Header />
           <Profile />
+        </Route>
+
+        <Route exact path="/signin">
+          <Login />
+        </Route>
+
+        <Route exact path="/signup">
+          <Register />
         </Route>
 
         <Route path="/404">
