@@ -57,6 +57,10 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .footer__container {
+    padding-top: 75px;
+  }
+
   .footer__description {
     padding-bottom: 20px;
   }

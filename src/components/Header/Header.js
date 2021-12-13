@@ -1,5 +1,6 @@
 import './Header.css';
 import logo from '../../images/logo.svg';
+import Navigation from '../Navigation/Navigation';
 
 function Header() {
   return (
@@ -15,6 +16,7 @@ function Header() {
           <button type="button" className="header__button header__button_last-of-type">Войти</button>
         </div>
       </div>
+      <Navigation />
     </section>
   );
 }

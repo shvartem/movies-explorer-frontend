@@ -15,7 +15,7 @@
   max-height: 560px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .auth__logo {
@@ -40,7 +40,7 @@
 
 .auth-form__label {
   box-sizing: border-box;
-  margin-bottom: 24px;
+  margin-bottom: 6px;
   display: flex;
   flex-direction: column;
 }
@@ -58,6 +58,7 @@
 
 .auth-form__item {
   padding: 0 0 10px;
+  margin-bottom: 6px;
   border: none;
   border-bottom: 1px solid #424242;
   background-color: transparent;
@@ -70,6 +71,24 @@
 
 .auth-form__item:focus {
   border-bottom: 1px solid #4285F4;
+}
+
+.auth-form__item-error {
+  color: #EE3465;
+  border-bottom: 1px solid #EE3465;
+}
+
+.auth-form__error {
+  display: block;
+  min-height: 12px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #EE3465;
+  opacity: 0;
+}
+
+.auth-form__error_active {
+  opacity: 1;
 }
 
 .auth-form__button {
