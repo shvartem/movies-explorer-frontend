@@ -1,0 +1,25 @@
+.burger-button {
+  padding: 8px 8px 7px;
+  border: none;
+  width: 100%;
+  max-width: 44px;
+  background-color: transparent;
+  display: none;
+}
+
+.burger-button__line {
+  display: block;
+  margin-bottom: 7px;
+  width: 100%;
+  border-bottom: 3px solid #ffffff;
+}
+
+.burger-button__line:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .burger-button {
+    display: unset;
+  }
+}
