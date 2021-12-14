@@ -1,3 +1,8 @@
+.movies__container {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .movies__more {
   box-sizing: border-box;
   padding-top: 50px;
@@ -8,6 +13,7 @@
 }
 
 .movies__more-button {
+  cursor: pointer;
   box-sizing: border-box;
   width: 100%;
   max-width: 320px;
@@ -25,7 +31,19 @@
   align-items: center;
 }
 
+@media screen and (max-width: 1023px) {
+  .movies__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .movies__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .movies__more-button {
     width: 80%;
   }

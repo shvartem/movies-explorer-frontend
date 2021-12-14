@@ -1,9 +1,7 @@
 @import url('../../blocks/section/__container/section__container.css');
-@import url('../../blocks/section/__container/_wide/section__container_wide.css');
 
 .footer__container {
-  padding-top: 79px;
-  padding-bottom: 20px;
+  padding: 79px 70px 20px;
 }
 
 .footer__content {
@@ -56,9 +54,15 @@
   margin-right: 0;
 }
 
+.footer__navigation-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1023px) {
   .footer__container {
-    padding-top: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .footer__description {
@@ -68,7 +72,6 @@
 
 @media screen and (max-width: 767px) {
   .footer__container {
-    padding-top: 79px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;

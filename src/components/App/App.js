@@ -9,6 +9,7 @@ import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
+import mainPagesHeadersColor from '../../utils/constants';
 
 const cards = [
   {
@@ -282,7 +283,7 @@ function App() {
     <div className="App page">
       <Switch>
         <Route exact path="/">
-          <Header />
+          <Header backgroundColor={mainPagesHeadersColor} />
           <Main />
           <Footer />
         </Route>

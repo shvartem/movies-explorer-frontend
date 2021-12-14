@@ -5,11 +5,12 @@ import Navigation from '../Navigation/Navigation';
 import BurgerButton from '../BurgerButton/BurgerButton';
 // import accountButton from '../../images/account-button.svg';
 
-function Header() {
+function Header(props) {
+  const { backgroundColor } = props;
   // const currentUser = true;
 
   return (
-    <section className="header">
+    <section className="header" style={{ backgroundColor }}>
       <div className="section__container header__container">
         <Link to="/" className="header__link header__link_first-of-type">
           <img src={logo} alt="Логотип сервиса Диплом" className="header__logo" />

@@ -21,8 +21,8 @@ function AboutMe() {
               начал заниматься фриланс-заказами и&nbsp;ушёл с&nbsp;постоянной работы.
             </p>
             <ul className="about-me__links-list">
-              <li className="about-me__links-item">Facebook</li>
-              <li className="about-me__links-item">Github</li>
+              <li className="about-me__links-item"><a href="https://facebook.com" target="_blank" className="about-me__link" rel="noreferrer">Facebook</a></li>
+              <li className="about-me__links-item"><a href="https://github.com/shvartem" target="_blank" className="about-me__link" rel="noreferrer">Github</a></li>
             </ul>
             <img src={userPhoto} alt="" className="about-me__photo" />
           </div>
@@ -30,21 +30,21 @@ function AboutMe() {
             <h4 className="portfolio__header">Портфолио</h4>
             <ul className="portfolio__list">
               <li className="portfolio__item">
-                <a className="portfolio__link" target="_blank" href="http://ya.ru" rel="noreferrer">
+                <a className="portfolio__link" target="_blank" href="https://shvartem.github.io/how-to-learn/" rel="noreferrer">
                   <p className="portfolio__paragraph">Статичный сайт</p>
                   <p className="portfolio__arrow">↗</p>
                   {/* <img className="portfolio__arrow" src={portfolioArrow} alt="" /> */}
                 </a>
               </li>
               <li className="portfolio__item">
-                <a className="portfolio__link" target="_blank" href="http://ya.ru" rel="noreferrer">
+                <a className="portfolio__link" target="_blank" href="https://shvartem.github.io/russian-travel/" rel="noreferrer">
                   <p className="portfolio__paragraph">Адаптивный сайт</p>
                   <p className="portfolio__arrow">↗</p>
                   {/* <img className="portfolio__arrow" src={portfolioArrow} alt="" /> */}
                 </a>
               </li>
               <li className="portfolio__item">
-                <a className="portfolio__link" target="_blank" href="http://ya.ru" rel="noreferrer">
+                <a className="portfolio__link" target="_blank" href="https://mesto422.nomoredomains.work" rel="noreferrer">
                   <p className="portfolio__paragraph">Одностраничное приложение</p>
                   <p className="portfolio__arrow">↗</p>
                   {/* <img className="portfolio__arrow" src={portfolioArrow} alt="" /> */}

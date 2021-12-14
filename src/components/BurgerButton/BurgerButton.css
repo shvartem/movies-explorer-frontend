@@ -23,3 +23,14 @@
     display: unset;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .burger-button {
+    padding: 8px 9px 7px;
+    max-width: 40px;
+  }
+
+  .burger-button__line {
+    border-bottom: 2px solid #ffffff;
+  }
+}
