@@ -1,5 +1,6 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Main from '../Main/Main';
 import Header from '../Header/Header';
@@ -9,7 +10,7 @@ import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
-import mainPagesHeadersColor from '../../utils/constants';
+import { mainPagesHeadersColor, ENTER_KEY } from '../../utils/constants';
 
 const cards = [
   {
@@ -279,29 +280,45 @@ const cards = [
 ];
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(false);
+
+  useEffect(() => {
+    function closeByEscape(evt) {
+      if (evt.key === ENTER_KEY) {
+        setCurrentUser((prevCurrentUser) => !prevCurrentUser);
+      }
+    }
+    document.addEventListener('keydown', closeByEscape);
+
+    return () => document.removeEventListener('keydown', closeByEscape);
+  }, []);
+
   return (
     <div className="App page">
       <Switch>
         <Route exact path="/">
-          <Header backgroundColor={mainPagesHeadersColor} />
+          <Header
+            backgroundColor={mainPagesHeadersColor}
+            currentUser={currentUser}
+          />
           <Main />
           <Footer />
         </Route>
 
         <Route exact path="/movies">
-          <Header />
+          <Header currentUser={currentUser} />
           <Movies cards={cards} />
           <Footer />
         </Route>
 
         <Route exact path="/saved-movies">
-          <Header />
+          <Header currentUser={currentUser} />
           <SavedMovies savedCards={cards} />
           <Footer />
         </Route>
 
         <Route exact path="/profile">
-          <Header />
+          <Header currentUser={currentUser} />
           <Profile />
         </Route>
 

@@ -5,8 +5,7 @@ import Navigation from '../Navigation/Navigation';
 import BurgerButton from '../BurgerButton/BurgerButton';
 
 function Header(props) {
-  const { backgroundColor } = props;
-  const currentUser = true;
+  const { backgroundColor, currentUser } = props;
 
   return (
     <section className="header" style={{ backgroundColor }}>
@@ -24,7 +23,13 @@ function Header(props) {
           : (
             <div className="header__auth">
               <Link to="/signup" className="header__link">Регистрация</Link>
-              <Link to="/signin" className="header__link header__link_last-of-type">Войти</Link>
+              <Link
+                to="/signin"
+                className="header__link header__link_last-of-type"
+              >
+                Войти
+
+              </Link>
             </div>
           )}
       </div>
