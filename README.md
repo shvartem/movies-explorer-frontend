@@ -1,6 +1,6 @@
 # Клиентская сторона дипломного проекта Я.Практикум
 
-Адрес сайта [https://mesto422.nomoredomains.rocks](https://mesto422.nomoredomains.rocks).
+Адрес сайта: [https://mesto422.nomoredomains.rocks](https://mesto422.nomoredomains.rocks).
 
 ## Переключение интерфейса зарегистрированного-незарегистрированного пользователя
 
