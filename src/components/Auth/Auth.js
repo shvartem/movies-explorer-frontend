@@ -10,7 +10,7 @@ function Auth(props) {
   return (
     <section className="section auth">
       <div className="auth__container">
-        <img src={logo} alt="Логотип" className="auth__logo" />
+        <img src={logo} alt="Логотип сервиса Диплом" className="auth__logo" />
         <h1 className="auth__header">{header}</h1>
         <form className="auth__form auth-form">
           <div className="auth-form__items">

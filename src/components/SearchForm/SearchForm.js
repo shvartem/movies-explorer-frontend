@@ -9,6 +9,7 @@ function SearchForm() {
           name="movieTitle"
           className="movies-form__item"
           placeholder="Фильм"
+          required
         />
         <button type="submit" className="movies-form__button">Найти</button>
       </div>

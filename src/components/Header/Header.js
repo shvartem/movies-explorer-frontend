@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import Navigation from '../Navigation/Navigation';
 import BurgerButton from '../BurgerButton/BurgerButton';
-// import accountButton from '../../images/account-button.svg';
 
 function Header(props) {
   const { backgroundColor } = props;
-  // const currentUser = true;
+  const currentUser = true;
 
   return (
     <section className="header" style={{ backgroundColor }}>
@@ -15,30 +14,19 @@ function Header(props) {
         <Link to="/" className="header__link header__link_first-of-type">
           <img src={logo} alt="Логотип сервиса Диплом" className="header__logo" />
         </Link>
-        <BurgerButton />
-        <Navigation />
-
-        {/* <div className="header__links"> */}
-        {/*  <div className="header__left"> */}
-        {/*    {currentUser &&
-        <Link to="/movies" className="header__link">Фильмы</Link>} */}
-        {/*    {currentUser &&
-        <Link to="/saved-movies" className="header__link">Сохранённые фильмы</Link>} */}
-        {/*  </div> */}
-        {/*  <div className="header__right"> */}
-        {/*    {!currentUser &&
-        <Link to="/signup" className="header__link">Регистрация</Link>} */}
-        {/*    {!currentUser &&
-        <Link to="/signin" className="header__link header__link_last-of-type">Войти</Link>} */}
-
-        {/*    {currentUser && ( */}
-        {/*    <Link to="/profile" className="navigation__account-link"> */}
-        {/*      <span className="navigation__account-text">Аккаунт</span> */}
-        {/*      <img src={accountButton} alt="" className="navigation__account-image" /> */}
-        {/*    </Link> */}
-        {/*    )} */}
-        {/*  </div> */}
-        {/* </div> */}
+        {currentUser
+          ? (
+            <>
+              <BurgerButton />
+              <Navigation />
+            </>
+          )
+          : (
+            <div className="header__auth">
+              <Link to="/signup" className="header__link">Регистрация</Link>
+              <Link to="/signin" className="header__link header__link_last-of-type">Войти</Link>
+            </div>
+          )}
       </div>
     </section>
   );

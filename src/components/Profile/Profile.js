@@ -12,11 +12,11 @@ function Profile() {
       <form className="profile__form form">
         <label className="form__label">
           <span className="form__label-text">Имя</span>
-          <input type="text" className="form__item" />
+          <input type="text" className="form__item" required />
         </label>
         <label className="form__label">
           <span className="form__label-text">E-mail</span>
-          <input type="email" className="form__item" />
+          <input type="email" className="form__item" required />
         </label>
         <button type="submit" className="form__button">Редактировать</button>
       </form>

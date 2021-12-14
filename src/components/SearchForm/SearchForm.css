@@ -121,8 +121,7 @@
 
 @media screen and (max-width: 767px) {
   .movies-form {
-    padding-top: 83px;
-    padding-bottom: 52px;
+    padding: 83px 4px 52px;
   }
 
   .movies-form__wrapper {

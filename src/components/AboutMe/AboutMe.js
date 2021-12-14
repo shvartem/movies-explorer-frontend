@@ -1,6 +1,5 @@
 import './AboutMe.css';
 import userPhoto from '../../images/user-photo.png';
-// import portfolioArrow from '../../images/portfolio-arrow.svg';
 
 function AboutMe() {
   return (
@@ -24,7 +23,7 @@ function AboutMe() {
               <li className="about-me__links-item"><a href="https://facebook.com" target="_blank" className="about-me__link" rel="noreferrer">Facebook</a></li>
               <li className="about-me__links-item"><a href="https://github.com/shvartem" target="_blank" className="about-me__link" rel="noreferrer">Github</a></li>
             </ul>
-            <img src={userPhoto} alt="" className="about-me__photo" />
+            <img src={userPhoto} alt="Фотография пользователя" className="about-me__photo" />
           </div>
           <div className="about-me__portfolio portfolio">
             <h4 className="portfolio__header">Портфолио</h4>
@@ -33,21 +32,18 @@ function AboutMe() {
                 <a className="portfolio__link" target="_blank" href="https://shvartem.github.io/how-to-learn/" rel="noreferrer">
                   <p className="portfolio__paragraph">Статичный сайт</p>
                   <p className="portfolio__arrow">↗</p>
-                  {/* <img className="portfolio__arrow" src={portfolioArrow} alt="" /> */}
                 </a>
               </li>
               <li className="portfolio__item">
                 <a className="portfolio__link" target="_blank" href="https://shvartem.github.io/russian-travel/" rel="noreferrer">
                   <p className="portfolio__paragraph">Адаптивный сайт</p>
                   <p className="portfolio__arrow">↗</p>
-                  {/* <img className="portfolio__arrow" src={portfolioArrow} alt="" /> */}
                 </a>
               </li>
               <li className="portfolio__item">
                 <a className="portfolio__link" target="_blank" href="https://mesto422.nomoredomains.work" rel="noreferrer">
                   <p className="portfolio__paragraph">Одностраничное приложение</p>
                   <p className="portfolio__arrow">↗</p>
-                  {/* <img className="portfolio__arrow" src={portfolioArrow} alt="" /> */}
                 </a>
               </li>
             </ul>

@@ -1,8 +1,8 @@
 .auth {
   box-sizing: border-box;
   padding: 70px;
-  height: 100%;
-  /*max-height: 700px;*/
+  height: 100vh;
+  max-height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,6 +117,12 @@
   margin-left: 6px;
   text-decoration: none;
   color: #4285F4;
+}
+
+@media screen and (max-width: 1023px) {
+  .auth {
+    max-height: 1024px;
+  }
 }
 
 @media screen and (max-width: 767px) {

@@ -16,7 +16,7 @@ function MoviesCard(props) {
         <div className="card__like" />
       </div>
       <div className="card__image-container">
-        <img src={`https://api.nomoreparties.co${card.image.url}`} alt="" className="card__image" />
+        <img src={`https://api.nomoreparties.co${card.image.url}`} alt={`Постер фильма "${card.nameRU}"`} className="card__image" />
       </div>
     </li>
   );
