@@ -1,8 +1,7 @@
-import MoviesCard from '../MoviesCard/MoviesCard';
 import './MoviesCardList.css';
 
 function MoviesCardList(props) {
-  const { cards } = props;
+  const { cards, component: Component } = props;
 
   if (cards.length === 0) {
     return (
@@ -13,7 +12,7 @@ function MoviesCardList(props) {
   }
   return (
     <ul className="movies__card-list">
-      {cards.map((card) => <MoviesCard key={card.id} card={card} />)}
+      {cards.map((card) => <Component key={card.id} card={card} />)}
     </ul>
   );
 }

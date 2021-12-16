@@ -2,7 +2,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <section className="section footer">
+    <footer className="section footer">
       <div className="section__container footer__container">
         <div className="footer__content">
           <p className="footer__description">Учебный проект Яндекс.Практикум х BeatFilm.</p>
@@ -24,7 +24,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
 

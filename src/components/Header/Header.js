@@ -8,9 +8,9 @@ function Header(props) {
   const { backgroundColor, currentUser } = props;
 
   return (
-    <section className="header" style={{ backgroundColor }}>
+    <header className="header" style={{ backgroundColor }}>
       <div className="section__container header__container">
-        <Link to="/" className="header__link header__link_first-of-type">
+        <Link to="/" className="header__link header__link_first-of-type link link_hover">
           <img src={logo} alt="Логотип сервиса Диплом" className="header__logo" />
         </Link>
         {currentUser
@@ -22,18 +22,17 @@ function Header(props) {
           )
           : (
             <div className="header__auth">
-              <Link to="/signup" className="header__link">Регистрация</Link>
+              <Link to="/signup" className="header__link link link_hover">Регистрация</Link>
               <Link
                 to="/signin"
-                className="header__link header__link_last-of-type"
+                className="header__link header__link_last-of-type link link_hover"
               >
                 Войти
-
               </Link>
             </div>
           )}
       </div>
-    </section>
+    </header>
   );
 }
 

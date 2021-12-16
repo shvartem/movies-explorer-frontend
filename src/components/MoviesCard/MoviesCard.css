@@ -33,15 +33,17 @@
   grid-area: cardDuration;
 }
 
-.card__like {
-  cursor: pointer;
+.card__button {
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 14px;
   height: 12px;
-  background: url('../../images/like.svg') center / contain no-repeat;
-  grid-area: cardLike;
-}
-
-.card__image-container {
+  border: none;
+  background-color: transparent;
+  grid-area: cardButton;
 }
 
 .card__image {
@@ -65,9 +67,10 @@
     padding: 12px;
     display: grid;
     grid-template-areas:
-      "cardTitle cardLike"
+      "cardTitle cardButton"
       "cardDuration cardDuration";
     justify-content: space-between;
+    align-items: start;
   }
 
   .card__title {
@@ -82,6 +85,12 @@
 
   .card__duration {
     margin-bottom: 1px;
+  }
+
+  .card__button {
+    cursor: pointer;
+    margin-top: 2px;
+    margin-right: 2px;
   }
 
   .card__image-container {

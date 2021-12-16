@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <div className="navigation">
       <div className="navigation__container">
-        <button type="button" className="navigation__close">
+        <button type="button" className="navigation__close button button_hover">
           <img src={closeButton} alt="Закрыть панель навигации" className="navigation__close-image" />
         </button>
         <nav className="navigation__nav">
@@ -15,7 +15,7 @@ function Navigation() {
             exact
             to="/"
             activeClassName="navigation__link_active"
-            className="navigation__link navigation__link_type_main"
+            className="navigation__link navigation__link_type_main link link_hover"
           >
             Главная
           </NavLink>
@@ -23,7 +23,7 @@ function Navigation() {
           <NavLink
             to="/movies"
             activeClassName="navigation__link_active"
-            className="navigation__link"
+            className="navigation__link link link_hover"
           >
             Фильмы
           </NavLink>
@@ -31,7 +31,7 @@ function Navigation() {
           <NavLink
             to="/saved-movies"
             activeClassName="navigation__link_active"
-            className="navigation__link"
+            className="navigation__link link link_hover"
           >
             Сохранённые фильмы
           </NavLink>
@@ -41,11 +41,11 @@ function Navigation() {
           <NavLink
             to="/profile"
             activeClassName="navigation__link_active navigation__link_type_active-account"
-            className="navigation__link navigation__link_type_account"
+            className="navigation__link navigation__link_type_account link link_hover"
           >
             Аккаунт
           </NavLink>
-          <Link to="/profile" className="navigation__account-image">
+          <Link to="/profile" className="navigation__account-image link link_hover">
             <img src={accountButton} alt="Профиль пользователя" className="navigation__account-image" />
           </Link>
         </div>

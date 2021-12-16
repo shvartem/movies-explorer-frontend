@@ -4,7 +4,7 @@ function Register() {
   return (
     <Auth
       authText="Уже зарегистрированы?"
-      authLink="/signup"
+      authLink="/signin"
       authLinkText="Войти"
       header="Добро пожаловать!"
       submitButtonText="Зарегистрироваться"

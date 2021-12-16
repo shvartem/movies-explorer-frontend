@@ -4,7 +4,7 @@ function Login() {
   return (
     <Auth
       authText="Ещё не зарегистрированы?"
-      authLink="/signin"
+      authLink="/signup"
       authLinkText="Регистрация"
       header="Рады видеть!"
       submitButtonText="Войти"

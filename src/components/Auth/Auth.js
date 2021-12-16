@@ -8,7 +8,7 @@ function Auth(props) {
   } = props;
 
   return (
-    <section className="section auth">
+    <main className="section auth">
       <div className="auth__container">
         <img src={logo} alt="Логотип сервиса Диплом" className="auth__logo" />
         <h1 className="auth__header">{header}</h1>
@@ -17,14 +17,14 @@ function Auth(props) {
             {children}
           </div>
 
-          <button type="submit" className="auth-form__button">{submitButtonText}</button>
+          <button type="submit" className="auth-form__button button button_hover">{submitButtonText}</button>
         </form>
         <p className="auth__text">
           {authText}
-          <Link to={authLink} className="auth__link">{authLinkText}</Link>
+          <Link to={authLink} className="auth__link link link_hover">{authLinkText}</Link>
         </p>
       </div>
-    </section>
+    </main>
   );
 }
 
