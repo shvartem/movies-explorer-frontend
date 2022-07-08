@@ -1,78 +1,77 @@
 .not-found-page {
-  box-sizing: border-box;
-  padding: 60px 70px;
-  height: 100vh;
-  max-height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    box-sizing: border-box;
+    padding: 60px 70px;
+    height: 100vh;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .not-found-page__container {
-  box-sizing: border-box;
-  padding-top: 186px;
-  width: 100%;
-  max-width: 400px;
-  height: 100%;
-  max-height: 580px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+    box-sizing: border-box;
+    padding-top: 186px;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .not-found-page__header {
-  margin: 0 0 5px;
-  font-size: 140px;
-  font-weight: normal;
-  line-height: 1.21;
+    margin: 0 0 5px;
+    font-size: 140px;
+    font-weight: normal;
+    line-height: 1.21;
 }
 
 .not-found-page__paragraph {
-  margin: 0 0 184px;
-  font-size: 16px;
-  line-height: 1.19;
+    margin: 0 0 184px;
+    font-size: 16px;
+    line-height: 1.19;
 }
 
 .not-found-page__button {
-  cursor: pointer;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  font-size: 14px;
-  line-height: 1.21;
-  color: #4285F4;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #4285f4;
 }
 
 @media screen and (max-width: 1023px) {
-  .not-found-page {
-    height: 100vh;
-    max-height: 1024px;
-    padding: 30px;
-  }
+    .not-found-page {
+        height: 100vh;
+        max-height: 1024px;
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-  .not-found-page {
-    max-height: 780px;
-    padding: 30px 10px;
-  }
+    .not-found-page {
+        max-height: 780px;
+        padding: 30px 10px;
+    }
 
-  .not-found-page__container {
-    padding-top: 300px;
-    max-width: 300px;
-    max-height: 720px;
-  }
+    .not-found-page__container {
+        padding-top: 300px;
+        max-width: 300px;
+        max-height: 720px;
+    }
 
-  .not-found-page__header {
-    margin-bottom: 9px;
-    font-size: 80px;
+    .not-found-page__header {
+        margin-bottom: 9px;
+        font-size: 80px;
+    }
 
-  }
-
-  .not-found-page__paragraph {
-    margin: 0 0 282px;
-    font-size: 12px;
-    line-height: 1.25;
-  }
+    .not-found-page__paragraph {
+        margin: 0 0 282px;
+        font-size: 12px;
+        line-height: 1.25;
+    }
 }

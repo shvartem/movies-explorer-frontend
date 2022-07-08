@@ -11,6 +11,6 @@ const Main = () => (
         <Techs />
         <AboutMe />
     </main>
-)
+);
 
 export default Main;

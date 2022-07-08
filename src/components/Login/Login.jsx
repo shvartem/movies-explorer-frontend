@@ -10,14 +10,21 @@ const Login = () => (
     >
         <label className="auth-form__label" htmlFor="email">
             <span className="auth-form__label-text">E-mail</span>
-            <input id="email" type="email" className="auth-form__item" required />
+            <input
+                id="email"
+                type="email"
+                className="auth-form__item"
+                required
+            />
             <span className="auth-form__error">Что-то пошло не так...</span>
         </label>
 
         <label className="auth-form__label" htmlFor="password">
             <span className="auth-form__label-text">Пароль</span>
             <input id="" type="password" className="auth-form__item" required />
-            <span className="auth-form__error auth-form__error_active">Что-то пошло не так...</span>
+            <span className="auth-form__error auth-form__error_active">
+                Что-то пошло не так...
+            </span>
         </label>
     </Auth>
 );

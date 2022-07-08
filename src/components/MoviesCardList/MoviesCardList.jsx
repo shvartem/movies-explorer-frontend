@@ -1,6 +1,6 @@
 import './MoviesCardList.css';
 
-const MoviesCardList = (props) => {
+const MoviesCardList = props => {
     const { cards, component: Component } = props;
 
     if (cards.length === 0) {
@@ -12,9 +12,11 @@ const MoviesCardList = (props) => {
     }
     return (
         <ul className="movies__card-list">
-            {cards.map((card) => <Component key={card.id} card={card} />)}
+            {cards.map(card => (
+                <Component key={card.id} card={card} />
+            ))}
         </ul>
     );
-}
+};
 
 export default MoviesCardList;

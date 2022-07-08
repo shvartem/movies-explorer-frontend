@@ -1,113 +1,113 @@
 .card {
-  box-sizing: border-box;
-  padding: 6px;
-  margin-bottom: 40px;
-  background-color: #2F2F2F;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    box-sizing: border-box;
+    padding: 6px;
+    margin-bottom: 40px;
+    background-color: #2f2f2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card:last-of-type {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .card__info {
-  box-sizing: border-box;
-  padding: 16px;
+    box-sizing: border-box;
+    padding: 16px;
 }
 
 .card__title {
-  margin: 0 0 13px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  grid-area: cardTitle;
+    margin: 0 0 13px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    grid-area: cardTitle;
 }
 
 .card__duration {
-  margin: 0 0 30px;
-  font-size: 11px;
-  line-height: 1.18;
-  color: #8B8B8B;
-  grid-area: cardDuration;
+    margin: 0 0 30px;
+    font-size: 11px;
+    line-height: 1.18;
+    color: #8b8b8b;
+    grid-area: cardDuration;
 }
 
 .card__button {
-  box-sizing: border-box;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 14px;
-  height: 12px;
-  border: none;
-  background-color: transparent;
-  grid-area: cardButton;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 12px;
+    border: none;
+    background-color: transparent;
+    grid-area: cardButton;
 }
 
 .card__image {
-  display: block;
-  width: 220px;
-  height: 122px;
-  object-fit: cover;
-  object-position: center;
-  overflow: hidden;
+    display: block;
+    width: 220px;
+    height: 122px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
-  .card {
-    flex-direction: column-reverse;
-    padding: 0;
-    margin-bottom: 20px;
-  }
+    .card {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin-bottom: 20px;
+    }
 
-  .card__info {
-    width: 100%;
-    padding: 12px;
-    display: grid;
-    grid-template-areas:
-      "cardTitle cardButton"
-      "cardDuration cardDuration";
-    justify-content: space-between;
-    align-items: start;
-  }
+    .card__info {
+        width: 100%;
+        padding: 12px;
+        display: grid;
+        grid-template-areas:
+            'cardTitle cardButton'
+            'cardDuration cardDuration';
+        justify-content: space-between;
+        align-items: start;
+    }
 
-  .card__title {
-    font-size: 12px;
-    line-height: 1.25;
-    margin-bottom: 9px;
-  }
+    .card__title {
+        font-size: 12px;
+        line-height: 1.25;
+        margin-bottom: 9px;
+    }
 
-  .card__like {
-    margin-right: 4px;
-  }
+    .card__like {
+        margin-right: 4px;
+    }
 
-  .card__duration {
-    margin-bottom: 1px;
-  }
+    .card__duration {
+        margin-bottom: 1px;
+    }
 
-  .card__button {
-    cursor: pointer;
-    margin-top: 2px;
-    margin-right: 2px;
-  }
+    .card__button {
+        cursor: pointer;
+        margin-top: 2px;
+        margin-right: 2px;
+    }
 
-  .card__image-container {
-    margin-bottom: 2px;
-    box-sizing: border-box;
-    position: relative;
-    width: 100%;
-    padding-bottom: 56%;
-  }
+    .card__image-container {
+        margin-bottom: 2px;
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        padding-bottom: 56%;
+    }
 
-  .card__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+    .card__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

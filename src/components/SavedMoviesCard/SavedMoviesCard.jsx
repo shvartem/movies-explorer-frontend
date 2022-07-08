@@ -2,7 +2,7 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 import deleteButton from '../../images/delete-button.svg';
 import './SavedMoviesCard.css';
 
-const SavedMoviesCard = (props) => {
+const SavedMoviesCard = props => {
     const { card } = props;
 
     return (
@@ -10,6 +10,6 @@ const SavedMoviesCard = (props) => {
             <img src={deleteButton} alt="" className="card__delete" />
         </MoviesCard>
     );
-}
+};
 
 export default SavedMoviesCard;

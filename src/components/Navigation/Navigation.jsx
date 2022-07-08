@@ -6,8 +6,15 @@ import accountButton from '../../images/account-button.svg';
 const Navigation = () => (
     <div className="navigation">
         <div className="navigation__container">
-            <button type="button" className="navigation__close button button_hover">
-                <img src={closeButton} alt="Закрыть панель навигации" className="navigation__close-image" />
+            <button
+                type="button"
+                className="navigation__close button button_hover"
+            >
+                <img
+                    src={closeButton}
+                    alt="Закрыть панель навигации"
+                    className="navigation__close-image"
+                />
             </button>
             <nav className="navigation__nav">
                 <NavLink
@@ -44,12 +51,19 @@ const Navigation = () => (
                 >
                     Аккаунт
                 </NavLink>
-                <Link to="/profile" className="navigation__account-image link link_hover">
-                    <img src={accountButton} alt="Профиль пользователя" className="navigation__account-image" />
+                <Link
+                    to="/profile"
+                    className="navigation__account-image link link_hover"
+                >
+                    <img
+                        src={accountButton}
+                        alt="Профиль пользователя"
+                        className="navigation__account-image"
+                    />
                 </Link>
             </div>
         </div>
     </div>
-)
+);
 
 export default Navigation;

@@ -4,7 +4,7 @@ import SearchForm from '../SearchForm/SearchForm';
 import Preloader from '../Preloader/Preloader';
 import SavedMoviesCard from '../SavedMoviesCard/SavedMoviesCard';
 
-const SavedMovies = (props) => {
+const SavedMovies = props => {
     const { savedCards } = props;
 
     const isLoading = false;
@@ -13,17 +13,17 @@ const SavedMovies = (props) => {
         <main className="section">
             <div className="section__container saved-movies__container">
                 <SearchForm />
-                {
-                    isLoading
-                        ? <Preloader />
-                        : (
-                            <MoviesCardList cards={savedCards} component={SavedMoviesCard} />
-                        )
-                }
+                {isLoading ? (
+                    <Preloader />
+                ) : (
+                    <MoviesCardList
+                        cards={savedCards}
+                        component={SavedMoviesCard}
+                    />
+                )}
             </div>
         </main>
-
     );
-}
+};
 
 export default SavedMovies;

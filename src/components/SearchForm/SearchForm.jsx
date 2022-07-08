@@ -10,13 +10,15 @@ const SearchForm = () => (
                 placeholder="Фильм"
                 required
             />
-            <button type="submit" className="movies-form__button button button_hover">Найти</button>
+            <button
+                type="submit"
+                className="movies-form__button button button_hover"
+            >
+                Найти
+            </button>
         </div>
 
-        <label
-            htmlFor="shortMovie"
-            className="movies-form__label"
-        >
+        <label htmlFor="shortMovie" className="movies-form__label">
             <input
                 type="checkbox"
                 name="shortMovie"
@@ -29,6 +31,6 @@ const SearchForm = () => (
             <span className="movies-form__label-text">Короткометражки</span>
         </label>
     </form>
-)
+);
 
 export default SearchForm;
