@@ -4,15 +4,13 @@ import AboutProject from '../AboutProject/AboutProject';
 import Promo from '../Promo/Promo';
 import Techs from '../Techs/Techs';
 
-function Main() {
-  return (
+const Main = () => (
     <main>
-      <Promo />
-      <AboutProject />
-      <Techs />
-      <AboutMe />
+        <Promo />
+        <AboutProject />
+        <Techs />
+        <AboutMe />
     </main>
-  );
-}
+)
 
 export default Main;

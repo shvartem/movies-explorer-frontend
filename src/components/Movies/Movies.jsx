@@ -4,30 +4,30 @@ import SearchForm from '../SearchForm/SearchForm';
 import Preloader from '../Preloader/Preloader';
 import FoundMoviesCard from '../FoundMoviesCard/FoundMoviesCard';
 
-function Movies(props) {
-  const { cards } = props;
+const Movies = (props) => {
+    const { cards } = props;
 
-  const isLoading = false;
+    const isLoading = false;
 
-  return (
-    <main className="section movies">
-      <div className="section__container movies__container">
-        <SearchForm />
-        {
-          isLoading
-            ? <Preloader />
-            : (
-              <>
-                <MoviesCardList cards={cards} component={FoundMoviesCard} />
-                <div className="movies__more">
-                  <button type="button" className="movies__more-button button button_hover">Ещё</button>
-                </div>
-              </>
-            )
-        }
-      </div>
-    </main>
-  );
+    return (
+        <main className="section movies">
+            <div className="section__container movies__container">
+                <SearchForm />
+                {
+                    isLoading
+                        ? <Preloader />
+                        : (
+                            <>
+                                <MoviesCardList cards={cards} component={FoundMoviesCard} />
+                                <div className="movies__more">
+                                    <button type="button" className="movies__more-button button button_hover">Ещё</button>
+                                </div>
+                            </>
+                        )
+                }
+            </div>
+        </main>
+    );
 }
 
 export default Movies;
