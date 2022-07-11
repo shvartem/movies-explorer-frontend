@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Auth.css';
 import logo from '../../images/logo.svg';
 
-const Auth = props => {
+const Auth = (props) => {
     const {
         authText,
         authLink,

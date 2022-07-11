@@ -1,6 +1,6 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Main from '../Main/Main';
 import Header from '../Header/Header';
@@ -11,6 +11,7 @@ import Profile from '../Profile/Profile';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import { mainPagesHeadersColor, ENTER_KEY } from '../../utils/constants';
+import { useCurrentUserContext } from '../../contexts/CurrentUserContextProvider';
 
 const cards = [
     {
@@ -384,18 +385,22 @@ const cards = [
 ];
 
 const App = () => {
-    const [currentUser, setCurrentUser] = useState(false);
+    const { currentUser, loginUser, logoutUser } = useCurrentUserContext();
 
     useEffect(() => {
         function closeByEscape(evt) {
             if (evt.key === ENTER_KEY) {
-                setCurrentUser(prevCurrentUser => !prevCurrentUser);
+                if (currentUser) {
+                    logoutUser();
+                } else {
+                    loginUser({});
+                }
             }
         }
         document.addEventListener('keydown', closeByEscape);
 
         return () => document.removeEventListener('keydown', closeByEscape);
-    }, []);
+    }, [currentUser, loginUser, logoutUser]);
 
     return (
         <div className="App page">

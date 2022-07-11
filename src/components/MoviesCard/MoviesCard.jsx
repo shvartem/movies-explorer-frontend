@@ -1,6 +1,6 @@
 import './MoviesCard.css';
 
-const MoviesCard = props => {
+const MoviesCard = (props) => {
     const { card, children } = props;
 
     function getHoursAndMinutes(duration) {

@@ -2,7 +2,7 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 import likeButton from '../../images/like.svg';
 import './FoundMoviesCard.css';
 
-const FoundMoviesCard = props => {
+const FoundMoviesCard = (props) => {
     const { card } = props;
 
     return (

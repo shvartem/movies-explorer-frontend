@@ -1,6 +1,6 @@
 import './BurgerButton.css';
 
-const BurgerButton = props => {
+const BurgerButton = (props) => {
     const { onClick } = props;
     return (
         <button

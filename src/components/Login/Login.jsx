@@ -21,7 +21,12 @@ const Login = () => (
 
         <label className="auth-form__label" htmlFor="password">
             <span className="auth-form__label-text">Пароль</span>
-            <input id="" type="password" className="auth-form__item" required />
+            <input
+                id="password"
+                type="password"
+                className="auth-form__item"
+                required
+            />
             <span className="auth-form__error auth-form__error_active">
                 Что-то пошло не так...
             </span>

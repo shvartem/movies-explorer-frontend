@@ -4,6 +4,6 @@
     "singleQuote": true,
     "quoteProps": "consistent",
     "trailingComma": "all",
-    "arrowParens": "avoid",
+    "arrowParens": "always",
     "proseWrap": "always"
 }

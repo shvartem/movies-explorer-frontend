@@ -4,7 +4,7 @@ import SearchForm from '../SearchForm/SearchForm';
 import Preloader from '../Preloader/Preloader';
 import SavedMoviesCard from '../SavedMoviesCard/SavedMoviesCard';
 
-const SavedMovies = props => {
+const SavedMovies = (props) => {
     const { savedCards } = props;
 
     const isLoading = false;

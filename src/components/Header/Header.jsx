@@ -4,7 +4,7 @@ import logo from '../../images/logo.svg';
 import Navigation from '../Navigation/Navigation';
 import BurgerButton from '../BurgerButton/BurgerButton';
 
-const Header = props => {
+const Header = (props) => {
     const { backgroundColor, currentUser } = props;
 
     return (
